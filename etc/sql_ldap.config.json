@@ -1,0 +1,20 @@
+{
+    "logLevel": "debug",
+    "port": 1389,
+    "host": "localhost",
+    "sql_connection": {
+      "limits": 10,
+      "username": "root",
+      "password": "password",
+      "database": "sql_ldap",
+      "port": 3306,
+      "host": "localhost"
+    },
+    "rootDN": "cn=root",
+    "rootPassword": "password",
+    "suffixes": ["dc=example, dc=com"],
+
+    "dc=fqcc, dc=ca": {
+
+    }
+}
