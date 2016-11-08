@@ -6,6 +6,7 @@
  */
 
 /*
+ * Copyright (c) 2014, Joyent, Inc.
  * Copyright (c) 2016, Les Technologies Alesium, Inc.
  */
 

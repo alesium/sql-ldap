@@ -12,9 +12,29 @@
     },
     "rootDN": "cn=root",
     "rootPassword": "password",
-    "suffixes": ["dc=example, dc=com"],
+    "baseDN": "dc=example, dc=com",
 
-    "dc=fqcc, dc=ca": {
-
+    "dc=example, dc=com": {
+      "userDN": "ou=people, dc=example, dc=com",
+      "groupDN": "ou=groups, dc=example, dc=com",
+      "ou=people, dc=example, dc=com": {
+        "query": "select concat(firstName, ' ', lastName) as cn, firstName as givenName, lastName as sn, password as userPassword, email as mail, 0 as inetuserstatus, username as uid from users where username = ?",
+        "schema": {
+          "cn": { "type": "string" },
+          "uid": {
+            "type": "string",
+            "unique": true
+          },
+          "mail": { "type": "string" },
+          "givenName": { "type": "string" },
+          "sn": { "type": "string" },
+          "inetuserstatus": { "type": "number" },
+          "objectClass": { "type": "[string]" }
+        }
+      },
+      "ou=groups, dc=example, dc=com": {
+        "query": "",
+        "schema": {}
+      }
     }
 }
