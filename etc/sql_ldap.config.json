@@ -30,7 +30,8 @@
           "sn": { "type": "string" },
           "inetuserstatus": { "type": "number" },
           "objectClass": { "type": "[string]" }
-        }
+        },
+        "objectClass": ["inetorgperson","fqccmember"]
       },
       "ou=groups, dc=example, dc=com": {
         "query": "",

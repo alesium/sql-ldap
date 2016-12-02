@@ -1,0 +1,41 @@
+{
+  "name": "sql-ldap",
+  "version": "0.0.1",
+  "description": "LDAP with SQL Backend",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alesium/sql-ldap.git"
+  },
+  "keywords": [
+    "sql",
+    "ldap"
+  ],
+  "author": "Sebastien Perreault <sperreault@alesium.net>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/alesium/sql-ldap/issues"
+  },
+  "homepage": "https://github.com/alesium/sql-ldap#readme",
+  "dependencies": {
+       "assert-plus": "0.1.2",
+       "async": "0.1.22",
+       "backoff": "2.4.1",
+       "bcrypt": "0.7.8",
+       "bunyan": "0.22.1",
+       "crc": "0.2.0",
+       "libuuid": "0.1.2",
+       "microtime": "0.3.1",
+       "nopt": "2.1.1",
+       "once": "1.3.0",
+       "vasync": "1.6.2",
+       "bcrypt": "^0.8.5",
+       "ldapjs": "^1.0.0",
+       "mysql": "^2.10.2",
+       "node_hash": "^0.2.0",
+       "phpass": "^0.1.1"
+   }
+}
